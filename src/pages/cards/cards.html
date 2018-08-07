@@ -1,0 +1,145 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Cards</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+
+  <ion-label text-uppercase>Cards</ion-label>
+  <ion-card>
+
+    <ion-card-header>
+      Card header
+    </ion-card-header>
+
+    <ion-card-content>
+      This is the card content.
+    </ion-card-content>
+
+  </ion-card>
+
+  <ion-label>List In Cards</ion-label>
+  <ion-card>
+    <ion-card-header>
+      Explore Nearby
+    </ion-card-header>
+  
+    <ion-list>
+      <button ion-item>
+        <ion-icon name="cart" item-start></ion-icon>
+        Shopping
+      </button>
+  
+      <button ion-item>
+        <ion-icon name="medical" item-start></ion-icon>
+        Hospital
+      </button>
+  
+      <button ion-item>
+        <ion-icon name="cafe" item-start></ion-icon>
+        Cafe
+      </button>
+  
+      <button ion-item>
+        <ion-icon name="paw" item-start></ion-icon>
+        Dog Park
+      </button>
+  
+      <button ion-item>
+        <ion-icon name="beer" item-start></ion-icon>
+        Pub
+      </button>
+  
+      <button ion-item>
+        <ion-icon name="planet" item-start></ion-icon>
+        Space
+      </button>
+  
+    </ion-list>
+  </ion-card>
+
+  <ion-label text-uppercase>Buttons</ion-label>
+  <button ion-button color="light">Light</button>
+  <button ion-button>Default</button>
+  <button ion-button color="secondary">Secondary</button>
+  <button ion-button color="danger">Danger</button>
+  <button ion-button color="dark">Dark</button>
+
+  <ion-label>Outline Style</ion-label>
+  <button ion-button outline>Primary Outline</button>
+
+  <ion-label>Clear Style</ion-label>
+  <button ion-button color="secondary" clear>Secondary Clear</button>
+
+  <ion-label>Round Buttons</ion-label>
+  <button ion-button color="danger" round>Danger Round</button>
+
+  <ion-label>Block Buttons</ion-label>
+  <button ion-button block>Block Button</button>
+
+  <ion-label>Full Buttons</ion-label>
+  <button ion-button full>Full Button</button>
+
+  <ion-label>Button Sizes</ion-label>
+  <button ion-button small>Small</button>
+  <button ion-button>Default</button>
+  <button ion-button large>Large</button>
+
+  <ion-label>Icon Buttons</ion-label>
+  <button ion-button icon-start>
+    <ion-icon name="home"></ion-icon>
+    Left Icon
+  </button>
+
+  <button ion-button icon-end>
+    Right Icon
+    <ion-icon name="home"></ion-icon>
+  </button>
+
+  <button ion-button icon-only>
+    <ion-icon name="home"></ion-icon>
+  </button>
+
+  <ion-label text-uppercase>Badges</ion-label>
+  <ion-item>
+    <ion-icon name="logo-twitter" item-start></ion-icon>
+    Followers
+    <ion-badge item-end color="secondary">260k</ion-badge>
+  </ion-item>
+
+  <ion-label text-uppercase>Icons</ion-label>
+  <ion-icon name="heart"></ion-icon>
+
+  <ion-label>Active</ion-label>
+  <ion-icon name="alert"></ion-icon>
+
+  <ion-label>Inactive</ion-label>
+  <ion-icon name="alert" isActive="false"></ion-icon>
+
+  <ion-label>Platform Specific</ion-label>
+  <ion-icon ios="logo-apple" md="logo-android"></ion-icon>
+
+  <ion-fab top right edge>
+    <button ion-fab mini><ion-icon name="add"></ion-icon></button>
+    <ion-fab-list>
+      <button ion-fab><ion-icon name="logo-facebook"></ion-icon></button>
+      <button ion-fab><ion-icon name="logo-twitter"></ion-icon></button>
+      <button ion-fab><ion-icon name="logo-vimeo"></ion-icon></button>
+      <button ion-fab><ion-icon name="logo-googleplus"></ion-icon></button>
+    </ion-fab-list>
+  </ion-fab>
+
+  <ion-fab right bottom>
+    <button ion-fab color="light"><ion-icon name="arrow-dropleft"></ion-icon></button>
+    <ion-fab-list side="left">
+      <button ion-fab><ion-icon name="logo-facebook"></ion-icon></button>
+      <button ion-fab><ion-icon name="logo-twitter"></ion-icon></button>
+      <button ion-fab><ion-icon name="logo-vimeo"></ion-icon></button>
+      <button ion-fab><ion-icon name="logo-googleplus"></ion-icon></button>
+    </ion-fab-list>
+  </ion-fab>
+
+</ion-content>

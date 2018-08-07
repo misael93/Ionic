@@ -1,0 +1,188 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Inputs</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-label text-uppercase>Inputs</ion-label>
+
+  <ion-label>Fixed Inline Labels</ion-label>
+  <ion-list>
+
+    <ion-item>
+      <ion-label fixed>Username</ion-label>
+      <ion-input type="text" value=""></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label fixed>Password</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+  
+  </ion-list>
+
+  <ion-label>Floating Labels</ion-label>
+  <ion-list>
+
+    <ion-item>
+      <ion-label floating>Username</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label floating>Password</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+  
+  </ion-list>
+
+  <ion-label>Inline Labels</ion-label>
+  <ion-list>
+
+    <ion-item>
+      <ion-label>Username</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label>Password</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+  
+  </ion-list>
+
+  <ion-label>Inset Labels</ion-label>
+  <ion-list inset>
+
+    <ion-item>
+      <ion-label>Username</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label>Password</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+  
+  </ion-list>
+
+  <ion-label>Placeholder Labels</ion-label>
+  <ion-list>
+
+    <ion-item>
+      <ion-input type="text" placeholder="Username"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-input type="password" placeholder="Password"></ion-input>
+    </ion-item>
+  
+  </ion-list>
+
+  <ion-label>Stacked Labels</ion-label>
+  <ion-list>
+
+    <ion-item>
+      <ion-label stacked>Username</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label stacked>Password</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+  
+  </ion-list>
+
+  <ion-label text-uppercase>RadioButton</ion-label>
+  <ion-list radio-group [(ngModel)]="relationship">
+    <ion-item>
+      <ion-label>Friends</ion-label>
+      <ion-radio value="friends" checked></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>Family</ion-label>
+      <ion-radio value="family"></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>Enemies</ion-label>
+      <ion-radio value="enemies" [disabled]="isDisabled"></ion-radio>
+    </ion-item>
+  </ion-list>
+
+  <ion-label text-uppercase>Select</ion-label>
+
+  <ion-label>Single Value: Radio Buttons</ion-label>
+  <ion-item>
+    <ion-label>Gender</ion-label>
+    <ion-select [(ngModel)]="gender">
+      <ion-option value="f">Female</ion-option>
+      <ion-option value="m">Male</ion-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-label>Multiple Value: Checkboxes</ion-label>
+  <ion-item>
+    <ion-label>Toppings</ion-label>
+    <ion-select [(ngModel)]="toppings" multiple="true">
+      <ion-option>Bacon</ion-option>
+      <ion-option>Black Olives</ion-option>
+      <ion-option>Extra Cheese</ion-option>
+      <ion-option>Mushrooms</ion-option>
+      <ion-option>Pepperoni</ion-option>
+      <ion-option>Sausage</ion-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-label text-uppercase>Toggle</ion-label>
+  <ion-list>
+
+    <ion-item>
+      <ion-label>Pepperoni</ion-label>
+      <ion-toggle [(ngModel)]="pepperoni"></ion-toggle>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label>Sausage</ion-label>
+      <ion-toggle [(ngModel)]="sausage" disabled="true"></ion-toggle>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label>Mushrooms</ion-label>
+      <ion-toggle [(ngModel)]="mushrooms"></ion-toggle>
+    </ion-item>
+  
+  </ion-list>
+
+  <ion-label text-uppercase>Checkbox</ion-label>
+  <ion-list>
+
+    <ion-item>
+      <ion-label>Pepperoni</ion-label>
+      <ion-checkbox [(ngModel)]="pepperoni"></ion-checkbox>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label>Sausage</ion-label>
+      <ion-checkbox [(ngModel)]="sausage" disabled="true"></ion-checkbox>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label>Mushrooms</ion-label>
+      <ion-checkbox [(ngModel)]="mushrooms"></ion-checkbox>
+    </ion-item>
+  
+  </ion-list>
+
+  <ion-label text-uppercase>DateTime</ion-label>
+  <ion-item>
+    <ion-label>Date</ion-label>
+    <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="myDate"></ion-datetime>
+  </ion-item>
+
+</ion-content>
